@@ -11,7 +11,7 @@ public class DiningClient
         _parser = parser;
     }
 
-    public async Task<DiningPlan> GetDiningPlan(string diningPlanUrl)
+    public async Task<DiningPlan> GetDiningPlanAsync(string diningPlanUrl)
     {
         using var client = _httpClientFactory.CreateClient();
         client.BaseAddress = new Uri(diningPlanUrl);

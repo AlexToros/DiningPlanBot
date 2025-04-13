@@ -1,6 +1,7 @@
 ﻿namespace DiningPlanBot;
 
-public class TelegramBotSettings
+public class AppSettings
 {
-    public string Token { get; set; }
+    public string BotToken { get; set; }
+    public string PathToProfiles { get; set; }
 }
